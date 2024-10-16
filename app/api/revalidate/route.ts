@@ -1,5 +1,6 @@
 import { revalidatePath } from "next/cache"
 import type { NextRequest } from "next/server"
+export const runtime = 'edge';
 
 async function handler(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams
